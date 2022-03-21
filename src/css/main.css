@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+/*------------------------------Generales-------------------------*/ 
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+    background-color: white;
+    text-align: left;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: darkblue;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: darkblue;
+    margin-left: 10px;
+}
+
+h4{
+    font-size: 25px;
+    color: blue;
+}
+/*---------------------------Descripciones-------------------------*/
+.descripcion{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(116, 116, 116);
+    line-height: 1.5;
+}
+
+/*-------------------------Nav bar--------------------------*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    font-weight: 700;
+    background-color: white;
+    opacity: .9;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li > a{
+    display: block;
+    position: relative;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+}
+
+nav ul li > a:hover{
+    color: white;
+}
+nav ul li .link::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    height: 80%;
+    transform: scale(0);
+    transition: transform 0.1s ease;
+    background-color: blue;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+nav ul li .link:hover::before{
+    transform: scale(1);
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+}
+
+nav h4{
+    display: block;
+    position: relative;
+}
+
+/*-------------------------------header---------------------------------*/
+
+header{
+    background-image: url(../assets/Nurse.png),linear-gradient(90deg, rgba(31,156,204,1) 0%, rgba(24,122,185,1) 100%);;
+    background-size: 700px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 133vh;
+}
+
+/*---------------------------Seccion 1-------------------------*/
+
+#seccion1{
+    padding: 0px;
+    width: 390px;
+    position: absolute;
+    top: 170px;
+    left: 120px;
+}
+
+#seccion1 table{
+    width: 100%;
+    color: rgb(101, 107, 112);
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+#seccion1 h3,img{
+    display: inline-block;
+}
+
+/*--------------------------Seleccion de la cita-----------------------------*/
+
+#seleccion{
+    width: 850px;
+    position: absolute;
+    top: 680px;
+    left: 120px;
+    background-color: rgb(255, 255, 255,.9);
+    
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+#seleccion table{
+    width: 100%;
+    padding: 30px;
+    height: 150px;
+}
+
+#seleccion table tr th{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+#seleccion table tr td{
+    font-size: 25px;
+    font-weight: 600;
+    color: darkblue;
+}
+
+input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.2;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    background-color: rgb(41,71,150);
+    color: white;
+}
+
+/*------------------------Logos de marcas----------------------------*/
+
+#marcas{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 60px;
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+    opacity: .2;
+}
+
+/*------------------------Seccion2------------------------------*/
+
+#seccion2{
+    width: 750px;
+    position: relative;
+    padding: 10px 120px;
+}
+
+#beneficios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.beneficio{
+    width: 250px;
+    height: 300px;
+    border: 2px solid;
+    border-color: rgb(180, 180, 180,.1);
+    border-radius: 10px;
+}
+
+.beneficio:hover{
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+}
+
+.tablaInfo,.tablaTitulo{
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.tablaTitulo{
+    height: 80px;
+    font-size: 25px;
+    font-weight: 500;
+    color: darkblue;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.tablaInfo{
+    vertical-align: top;
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(116, 116, 116);
+    line-height: 1.5;
+}
+
+.icono{
+    padding-left: 25px;
+    padding-top: 20px;
+    height: 60px;
+}
+
+/*-----------------------------------------Seccion3----------------------------------------------*/
+
+#bloque3{
+    background-image: url(../assets/Person.png);
+    background-size: 600px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 130vh;
+}
+
+#seccion3{
+    position: absolute;
+    right: 150px;
+    width: 530px;
+    padding-top: 70px;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.preparaciones{
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    vertical-align: middle;
+    padding: 18px;
+    color: rgb(173, 173, 173);
+    font-weight: 600;
+}
+
+#hide1,#hide2,#hide3,#hide4,#hide5{
+    display: none;
+}
+
+#but1,#but2,#but3,#but4,#but5{
+    color: darkblue;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.boton{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ico2{
+    width: 40px;
+}
+
+.boton,.preparaciones:hover{
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+}
+
+.titulo2{
+    width: 300px;
+    font-size: 18px;
+    color: rgb(108, 107, 163);
+}
+
+/*------------------------seccion4-------------------------*/
+
+#bloque4{
+    background-image: url(../assets/Doctor.png);
+    background-size: 600px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 150vh;
+}
+
+#seccion4{
+    width: 700px;
+    position: relative;
+    padding-left:100px;
+    padding-top: 110px;
+}
+
+#contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 70px;
+}
+
+.medio{
+    width: 250px;
+    height: 220px;
+    border: 2px solid;
+    border-color: rgba(202, 202, 202, 0.15);
+    border-radius: 10px;
+}
+
+.titulomedio,.infomedio{
+    height: 50px;
+}
+
+.titulomedio{
+    font-size: 25px;
+    font-weight: 500;
+    color: darkblue;
+    vertical-align: bottom;
+}
+
+.infomedio{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(116, 116, 116);
+    line-height: 1.5;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.btcont{
+    width: 100%;
+    text-align: center;
+}
+
+.botonmedio{
+    width: 80%;
+    height: 60px;
+    border: none;
+    color: darkblue;
+    background-color: lightblue;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.botonmedio:hover{
+    background-color: blue;
+    color: white;
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+}
+
+.medio:hover{
+    -webkit-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.75);
+}
+
+.icomedio{
+    width: 50px;
+    text-align: center;
+}
+
+/*-------------------------footer---------------------------------*/
+
+footer{
+    background-color: rgba(173, 216, 230, 0.2);
+    font-weight: 700;
+    height: 350px;
+    color: gray;
+}
+
+#vac{
+    position: relative;
+    display: inline-block;
+    left: 130px;
+    top: 55px;
+    width: 200px;
+}
+
+#vac h4{
+    margin: 0;
+}
+
+#vac p{
+    line-height: 25px;
+}
+
+#otros{
+    position:relative;
+    float: right;
+    right: 100px;
+    top: 55px;
+    width: 550px;
+    height: 160px;
+}
+
+#otros table{
+    width: 100%;
+    height: 100%;
+}
+#otros th{
+    width: 33%;
+    height: 20%;
+    font-size: 20px;
+    color: darkblue;
+    vertical-align: top;
+}
+
+#derechos{
+    position: relative;
+    display: inline-block;
+    top: 180px;
+    left: -75px;
+}
+
+#terminos{
+    position: relative;
+    display: inline-block;
+    left: 430px;
+    top: 190px;
+    width: 300px;
+}
+
+#terminos table{
+    width: 100%;
+}
+
+
+
+
+
+
